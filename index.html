@@ -1,62 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Centered Text Example</title>
-  <style>
-body{
-	color: #616b71;
-	background-color: #e9e9e9;
-	font-family: arial;
-	margin: 0px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Iframe</title>
+    <style>
+* {
+     box-sizing: border-box;
 }
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; 
+ body, html {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     width: 100%;
+     overflow: hidden;
 }
-
-.centered-text {
-  text-align: center;
-}
-
-
-.container {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-}
-
-.centered-text {
-  text-align: center;
-}
-
-@keyframes fontResize {
-  0% {
-    font-size: 25px;
-  }
-  50% {
-    font-size: 20px;
-  }
-  100% {
-    font-size: 25px;
-  }
-}
-
-.title {
-  animation: fontResize 2s infinite;
-}
-
-  </style>
+ iframe {
+     width: 100%;
+     height: 100%;
+     border: none;
+     display: block;
+}	    
+    </style>
 </head>
 <body>
-	<div class="container">
-	  <div class="centered-text">
-		<div class="title" >
-		Soon..
-		</div>
-	  </div>
-	</div>
+	<iframe src="https://mango-rock-0cf287a03.3.azurestaticapps.net/"></iframe>
 </body>
 </html>
